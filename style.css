@@ -1,0 +1,117 @@
+@import url('https://fonts.maateen.me/charu-chandan-3d/font.css');
+
+@font-face {
+    font-family: koshtipathor;
+    src: url(/font/koshtipathor.ttf);
+}
+
+body {
+    font-family: "Comic Sans MS", "Comic Sans", 'cursive'; 
+    margin: 0
+}
+ 
+#container {
+    display: flex;
+}
+
+.sidebar {
+    width: 350px;
+    height: 625px;
+    position: sticky;
+    background-color: #053742;
+    color: white;
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+.heading, h2, 
+.extra-font{
+    font-family: 'CharuChandan3D', 'sans-serif';
+}
+.heading a {
+    color: white;
+    text-decoration: none;
+}
+.about-book {
+    padding: 10px 25px;
+}
+.description {
+    font-family: koshtipathor;
+    line-height: 1.5;
+}
+.about-book h3 {
+    font-size: 35px;
+    margin: 0;
+}
+.sidebar .wiki-link {
+    color: #eee;
+    text-decoration: none;
+}
+.sidebar .wiki-link:hover {
+    text-decoration: underline;
+    color: darkblue;
+}
+footer {
+    margin-top: 15px;
+}
+footer i {
+    font-size: 25px;
+    margin: 5px;
+    color: white;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+#content-box {
+    background-color: #39A2DB;
+    width: 350px;
+    padding: 0 25px;
+    float: right;
+    right: 0;
+    flex-grow: 1;
+}
+.search-bar {
+    padding: 40px;
+}
+.search-bar input, button {
+    width: 90%;
+    padding: 15px;
+    border: 0;
+    border-radius: 25px;
+    outline: 0;    
+    font-size: 16px;
+}
+button {
+    width: 8%;
+}
+.book-shelf {
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+.shelf-row {
+    display: grid;grid-template-columns: repeat(4, 200px);
+    justify-content: center;
+    grid-gap: 2em;
+}
+.book {
+    width: 200px;
+    height: 200px;
+    background-color: #A2DBFA;
+}
+footer h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 0;
+}
+footer .follow-txt {
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 4%;
+}
