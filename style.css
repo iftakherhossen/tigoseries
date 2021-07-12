@@ -19,7 +19,7 @@ body {
     height: 625px;
     position: sticky;
     background-color: #053742;
-    color: white;
+    color: #E8F0F2;
     text-align: center;
     top: 0;
     left: 0;
@@ -29,8 +29,8 @@ body {
     font-family: 'CharuChandan3D', 'sans-serif';
 }
 .heading a {
-    color: white;
     text-decoration: none;
+    color: #E8F0F2;
 }
 .about-book {
     padding: 10px 25px;
@@ -44,8 +44,8 @@ body {
     margin: 0;
 }
 .sidebar .wiki-link {
-    color: #eee;
     text-decoration: none;
+    color: #E8F0F2;
 }
 .sidebar .wiki-link:hover {
     text-decoration: underline;
@@ -57,11 +57,11 @@ footer {
 footer i {
     font-size: 25px;
     margin: 5px;
-    color: white;
+    color: #E8F0F2;
 }
 footer a {
-    color: white;
     text-decoration: none;
+    color: #E8F0F2;
 }
 footer a:hover {
     text-decoration: underline;
@@ -88,6 +88,7 @@ footer a:hover {
 }
 button {
     width: 8%;
+    margin-left: 8px;
 }
 .book-shelf {
     margin-top: 1%;
@@ -99,9 +100,32 @@ button {
     grid-gap: 2em;
 }
 .book {
+    position: relative;
+}
+.book,
+.pdf-cover,
+img {
     width: 200px;
     height: 200px;
-    background-color: #A2DBFA;
+}
+.pdf-details {
+    display: none;
+    position: absolute;
+    width: 200px;
+    top: 0;
+    text-align: center;
+    font-weight: 900;
+    height: 100%;
+}
+.book:hover .pdf-details{
+    display: block;
+    background-color: #eeeeee59;
+}
+.pdf-details h3 {
+    margin-bottom: 100px;
+}
+.pdf-details p {
+    padding: 0 10px;
 }
 footer h2 {
     font-size: 40px;
@@ -111,7 +135,6 @@ footer h2 {
 footer .follow-txt {
     text-align: center;
     font-size: 18px;
-    color: black;
     margin-top: 0;
     margin-bottom: 4%;
 }
